@@ -11,6 +11,7 @@ jobs:
       - run: pip install .
       - run: |
           conda --version
+          conda init bash
           conda env create -f environment.yaml
           conda activate grinch
           grinch -h
