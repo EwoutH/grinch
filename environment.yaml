@@ -6,13 +6,13 @@ channels:
   - defaults
 dependencies:
   - wget
-  - biopython=1.74
+  - biopython=1.78
   - minimap2
-  - pip=19.3.1
+  - pip=20.3.3
   - python=3.7
   - snakemake-minimal=5.31.1
   - libpysal=4.3.0
-  - nodejs=10.12.0
+  - nodejs=10.13.0
   - pip:
     - mako
     - pandas>=1.1.0
