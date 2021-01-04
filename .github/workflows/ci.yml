@@ -9,6 +9,7 @@ jobs:
         with:
           python-version: 3.7
       - run: pip install .
+      - run: conda --version
       - run: conda env create -f environment.yaml
       - run: conda activate grinch
       - run: grinch -h
