@@ -15,8 +15,10 @@ jobs:
       - uses: conda-incubator/setup-miniconda@v2
         with:
           python-version: 3.7
-      - run: pip install .
+          activate-environment: grinch
       - run: conda --version
+      - run: grinch -h
+      - run: pip install .
       - run: conda env create -f environment.yaml
       - run: conda activate grinch
       - run: grinch -h
