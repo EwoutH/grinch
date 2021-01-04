@@ -4,7 +4,7 @@ from grinch import __version__
 import setuptools
 import argparse
 import os.path
-import snakemake-minimal as snakemake
+import snakemake-minimal
 import sys
 import tempfile
 import csv
