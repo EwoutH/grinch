@@ -3,4 +3,6 @@ on: [push, pull_request]
 jobs:
   test:
     runs-on: ubuntu-latest
-    run: ./grinch/scripts/test.smk
+    steps:
+      - run: pip install .
+      - run: conda env create -f environment.yml
