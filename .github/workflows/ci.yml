@@ -15,8 +15,6 @@ jobs:
           environment-file: environment.yaml
           activate-environment: grinch
           auto-activate-base: false
-      - run: python
       - run: conda info --envs
-      - run: cd /usr/share/miniconda/envs/
-      - run: conda info --envs
+      - run: pip install .
       - run: grinch -h
