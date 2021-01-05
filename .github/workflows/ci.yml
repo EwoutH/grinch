@@ -16,6 +16,7 @@ jobs:
         with:
           python-version: 3.8.5
           environment-file: environment.yaml
+          auto-activate-base: true
           activate-environment: grinch
       - run: conda info --envs
       - run: grinch -h
