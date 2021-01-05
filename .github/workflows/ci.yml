@@ -16,5 +16,6 @@ jobs:
           activate-environment: grinch
           auto-activate-base: false
       - run: conda info --envs
+      - run: pip install -U pip wheel
       - run: pip install .
       - run: grinch -h
