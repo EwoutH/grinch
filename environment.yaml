@@ -10,7 +10,7 @@ dependencies:
   - minimap2
   - pip=20.3.3
   - python=3.7
-  - snakemake-minimal=5.31.1
+  - snakemake-minimal=5.8.1
   - libpysal=4.3.0
   - nodejs=10.13.0
   - pip:
