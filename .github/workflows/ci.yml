@@ -17,5 +17,5 @@ jobs:
           auto-activate-base: false
       - run: conda info --envs
       - run: cd $CONDA/envs/grinch
-      #- run: conda info --envs
+      - run: conda info --envs
       - run: grinch -h
