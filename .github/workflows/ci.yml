@@ -16,6 +16,6 @@ jobs:
           activate-environment: grinch
           auto-activate-base: false
       - run: conda info --envs
-      - run: cd /usr/share/miniconda/envs/grinch
+      - run: cd /usr/share/miniconda/envs/
       - run: conda info --envs
       - run: grinch -h
