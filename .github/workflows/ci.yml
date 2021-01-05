@@ -17,5 +17,5 @@ jobs:
           python-version: 3.8.5
           environment-file: environment.yaml
           activate-environment: grinch
-      - run: conda info
+      - run: conda info --envs
       - run: grinch -h
