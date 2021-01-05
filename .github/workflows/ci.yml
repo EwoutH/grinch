@@ -1,0 +1,17 @@
+on: [push, pull_request]
+
+defaults:
+  run:
+    shell: bash -l {0}
+
+jobs:
+  test:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: conda-incubator/setup-miniconda@v2
+        with:
+          python-version: 3.7
+          environment-file: environment.yaml
+          activate-environment: grinch
+      - run: conda info
+      - run: grinch -h
